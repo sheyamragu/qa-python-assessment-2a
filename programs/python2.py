@@ -140,7 +140,8 @@ def five():
     # There are no hints for this question.
     
 def six(string):
-    return False
+    suffix = string.casefold().endswith("py")
+    return suffix
 
     # <QUESTION 7>
 

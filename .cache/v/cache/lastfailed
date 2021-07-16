@@ -4,7 +4,6 @@
   "tests/assessment_test.py::test_four": true,
   "tests/assessment_test.py::test_nine": true,
   "tests/assessment_test.py::test_seven": true,
-  "tests/assessment_test.py::test_six": true,
   "tests/assessment_test.py::test_ten": true,
   "tests/assessment_test.py::test_three": true
 }
