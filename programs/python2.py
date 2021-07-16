@@ -30,7 +30,10 @@
     # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+  result = ''
+  for char in string:
+    result += char*3
+  return result
 
     # <QUESTION 2>
 
@@ -48,6 +51,13 @@ def one(string):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(num):
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                return False
+
+        return True
+
     return False
 
     # <QUESTION 3>
@@ -189,7 +199,28 @@ def eight(string, num):
     # There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+    
+    n1 = int(len(string1))
+    n2 = int(len (string2))
+    
+    for x in range(n1, n2):
+        if n1 < n2:
+            x = n1
+            
+        elif n2 < n1:
+            x = n2
+                
+        else:
+            x = n1
+
+    string1 = sorted(string1)
+    string2 = sorted(string2)
+
+    for i in range(0, x):
+        if string1[i] != string2[i]:
+            return False
+ 
+    return True
 
     # <QUESTION 10>
 
